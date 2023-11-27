@@ -1,0 +1,25 @@
+body{
+    background-color:red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.songImg{
+    height:30vh;
+    width:30vw;
+    object-fit: contain;
+}
+.titleContainer{
+    font-weight: 800;
+    text-decoration: underline;
+    font-size: 30px
+}
+.playBtn,.pauseBtn,.stopBtn{
+    background-color: aqua;
+    border:none;
+    width: 200px;
+    padding: 1em;
+}
+.playBtn:active{
+    background-color: blueviolet;
+}
