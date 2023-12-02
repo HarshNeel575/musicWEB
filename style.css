@@ -34,7 +34,7 @@ body {
 .song-image {
   width: 250px; /* Set width */
   height: 250px; /* Set height */
-  border-radius: 25%; /* Make it a circle */
+  border-radius: 50%; /* Make it a circle */
   overflow: hidden; /* Hide overflowing content */
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center horizontally */
