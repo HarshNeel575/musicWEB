@@ -1,0 +1,103 @@
+/* Basic styling */
+
+/* Styling for the body */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* Font for the entire document */
+  background-color: #e02020; /* Background color for the body */
+  margin-top: 40px;
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: first baseline; /* on top vertically */
+  height: 120vh; /* Set height to 120% of viewport height */
+}
+
+/* Styling for the main container */
+.container {
+  text-align: center; /* Center text within container */
+  text-shadow: #e02020;
+  margin-top: 1vh; /* Add space from the top */
+  
+}
+
+/* Styling for the player section */
+.player {
+  display: inline-block; /* Display as inline block */
+  width: 85%; /* Set width to 85% */
+  text-align: center; /* Align text to the left */
+  padding: 20px; /* Add padding */
+  background-color: #bcbc9c89; /* Background color for the player */
+  border-radius: 25px; /* Rounded corners */
+}
+
+/* Styling for the song image */
+.song-image {
+  width: 250px; /* Set width */
+  height: 250px; /* Set height */
+  border-radius: 25%; /* Make it a circle */
+  overflow: hidden; /* Hide overflowing content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 2px; /* Space at the bottom */
+}
+
+/* Styling for the image inside the song image container */
+.song-image img {
+  width: 110%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  object-fit: contain; /* Maintain aspect ratio while fitting the container */
+}
+
+/* Styling for the playlist section */
+.playlist {
+  margin-top: 10px; /* Space at the top */
+}
+
+/* Styling for unordered lists */
+ul {
+  list-style: symbols(); /* Change list style */
+  padding: 0; /* Remove default padding */
+  text-align: left; /* Align text to the left */
+}
+
+/* Styling for list items */
+li {
+  margin-bottom: 10px; /* Space at the bottom */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Hover effect for list items */
+li:hover {
+  color: #ff6666; /* Change text color on hover */
+}
+
+/* Styling for the remove song button */
+#removeSongBtn {
+  margin-top: 10px; /* Space at the top */
+  padding: 5px 10px; /* Padding for the button */
+  background-color: #ff6666; /* Background color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Styling for the available songs section */
+.available-songs {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  width: 20%; /* Set width to 20% */
+  margin-top: 50px; /* Space at the top */
+  text-align: left; /* Align text to the left */
+  align-self: stretch; /* Stretch to fill the height */
+  padding: 20px; /* Add padding */
+  background-color: #bcbc9c89; /* Background color for available songs */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Styling for the available songs heading */
+.available-songs h2 {
+  margin-bottom: 2px; /* Space at the bottom */
+}

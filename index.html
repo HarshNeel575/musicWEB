@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking external CSS file -->
+</head>
+<body>
+  <div class="container"> <!-- Main container -->
+
+    <!-- Player section -->
+    <div class="player">
+      <h1>Music Player</h1>
+      <!-- Song information display section -->
+      <div class="song-info">
+        <div class="song-image">
+          <img id="songImage" src="" alt="Image"> <!-- Image for song display -->
+        </div>
+        <div class="song-details">
+          <h2 id="songTitle">Select a song</h2> <!-- Title of the song -->
+          <p id="artistName">Artist Name</p> <!-- Artist of the song -->
+        </div>
+      </div>
+
+      <audio id="audio" controls onended="playRandomSong()"></audio> <!-- Audio element for playing the songs -->
+
+      <!-- Playlist section -->
+      <div class="playlist">
+        <ul id="playlist">
+          <!-- List items representing songs in the playlist -->
+          <li data-src="Songs/DŽANUM.mp3" data-img="Images/DŽANUM.jpg" data-title="DŽANUM" data-artist="Teya Dora">DŽANUM</li>
+          <li data-src="Songs/DivyaDrishti.mp3" data-img="Images/DivyaDrishti.jpg" data-title="Divya Drishti" data-artist="Deevoy Singh">Divya Drishti</li>
+          <li data-src="Songs/Edge-Metalingus.mp3" data-img="Images/Edge.jpg" data-title="Metalingus" data-artist="It Lives,It Breathes">Edge-Metalingus</li>
+          <li data-src="Songs/CM Punk.mp3" data-img="Images/CM Punk.jpg" data-title="Cult of Personality" data-artist="Living Colour">Cult of Personality</li>
+          <li data-src="Songs/Orton.mp3" data-img="Images/Orton.jpg" data-title="Voices" data-artist="WWE,Rev Theory">Voices</li>
+          <li data-src="Songs/KKK.mp3" data-img="Images/Kkikali.jpg" data-title="Tumhe Banaya" data-artist="Mohammed Rafi">Ye Chand Sa Roshnan Chehra</li>
+          <li data-src="Songs/Perfect.mp3" data-img="Images/Perfect.jpg" data-title="Perfect" data-artist="Ed Sheeran">Perfect</li>
+        </ul>
+        <button id="removeSongBtn">Remove Song</button> <!-- Button to remove a song from the playlist -->
+      </div>
+    </div>
+
+    <!-- Section for available songs -->
+    <div class="available-songs">
+      <h2>Available Songs</h2>
+      <ul id="availableSongs">
+        <!-- List items representing available songs -->
+        <li data-src="songs/Dafa-406.mp3" data-img="Images/Dafa406.jpg" data-title="Dafa 406" data-artist="Chhotu Shikari">Dafa 406</li>
+        <li data-src="Songs/Believer.mp3" data-img="Images/Believer.jpg" data-title="Believer" data-artist="Imagine-Dragons">Believer</li>
+        <li data-src="Songs/CloserChainsmokers.mp3" data-img="Images/Closer.jpg" data-title="Closer" data-artist="The Chainsmokers">Closer</li>
+        <li data-src="Songs/Thunder.mp3" data-img="Images/Thunder.jpg" data-title="Thunder" data-artist="Imagine-Dragons">Thunder</li>
+        <li data-src="Songs/AathmaRaama.mp3" data-img="Images/AathmaRaama.jpg" data-title="Aathma Raama" data-artist="Broda V">Aathma Raama</li>
+        <li data-src="Songs/Spectre.mp3" data-img="Images/Spectre.jpg" data-title="Spectre" data-artist="Alan Walker">Spectre</li>
+
+        
+        
+        <!-- Additional available songs can be added here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>
